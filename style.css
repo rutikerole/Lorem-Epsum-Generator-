@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+.container {
+    background: linear-gradient(135deg, #92d8f1 0%, #b5ffb1 100%);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    max-width: 700px;
+    width: 100%;
+    position: fixed; /* Keep container in a fixed position */
+    top: 5rem; /* Adjust the top margin to place it appropriately */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+output {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+#result {
+    max-height: calc(100vh - 250px); /* Dynamic height for scrolling */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+#result p {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 4px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}

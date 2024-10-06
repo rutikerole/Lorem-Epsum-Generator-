@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Lorem Ipsum Generator</h1>
+
+        <form id="generator-form">
+            <div class="input-group">
+                <label for="paragraph-count">📄 Number of paragraphs:</label>
+                <input type="range" id="paragraph-count" name="paragraphs" min="1" max="10" value="2">
+                <output id="paragraph-output">2</output>
+            </div>
+
+            <div class="input-group">
+                <label for="word-count">✍️ Words per paragraph:</label>
+                <input type="range" id="word-count" name="words" min="10" max="100" step="10" value="40">
+                <output id="word-output">40</output>
+            </div>
+
+            <button type="submit" class="btn">Generate</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
